@@ -43,7 +43,7 @@
       cursor: pointer;
     }
     </style>
-  </head>
+  </head<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css>
 
   <body>
 
@@ -81,12 +81,23 @@
           <option>Full Cleaning</option>
         </select><br>
 
-        <input type="date" name="date"><br>
+        <input type="text" id="datepicker" name="date" placeholder="Select a date" required>
 
-        <button type="submit">Book Appointment</button>
+        <button type="submit">Book Now</button>
       </form>
     </section>
-
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    flatpickr("datePicker", {
+      minDate:"today"
+        disable: [
+      function(date) {
+        // Disable Sundays 
+        return (date.getDay() === 0);
+      }
+    ]
+    });
+  </script>
   </body>
 </html>
     </section>

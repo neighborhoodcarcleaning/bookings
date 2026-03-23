@@ -101,14 +101,14 @@
          <input type="text" id="datepicker" name="date" placeholder="Select a date" required><br> 
              
         <label>Select Cleaning</label><br>
-        <h3>Select Services</h3>
-          <label><input type="checkbox" name="services[]" value="Exterior Wash">           Exterior Wash</label><br>
-          <label><input type="checkbox" name="services[]" value="Interior Cleaning">       Interior Cleaning</label><br>
-          <label><input type="checkbox" name="services[]" value="premium Interior Detail"> Premium Interior Detail</label><br>
-          <label><input type="checkbox" name="services[]" value="Full Cleaning">           Full Cleaning</label><br>
+       <select name="services[]" multiple required size="4">
+         <option value="Exterior Wash">Exterior Wash</option>
+         <option value="Interior Cleaning">Interior Cleaning</option>
+         <option value="Premium Interior Detail">Premium Interior Detail</option>
+         <option value="Full Cleaning">Full Cleaning</option>
+       </select><br>
      
 
-      
         <label>Additional Requests</label><br>
         <input type="text" name="Additional Requests" placeholder="e.g. tire shine"><br> 
         <h3>LARGER VEHICLES ARE SUBJECT TO RESCHEDULES TO LATER HOURS</h3>
